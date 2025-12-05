@@ -2,8 +2,8 @@ package com.harmim.aoc2025
 
 class Day01(input: String) : BaseDay(input) {
     companion object {
-        const val START_POSITION = 50
-        const val DIAL_MAX = 99 + 1
+        private const val START_POSITION = 50
+        private const val DIAL_MAX = 99 + 1
     }
 
     private enum class Direction {
