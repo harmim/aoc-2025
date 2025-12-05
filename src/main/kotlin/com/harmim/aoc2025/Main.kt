@@ -5,7 +5,7 @@ import java.nio.file.Path
 import kotlin.system.exitProcess
 import kotlin.system.measureTimeMillis
 
-class InputException(msg: String) : Exception(msg)
+private class InputException(msg: String) : Exception(msg)
 
 fun main(args: Array<String>) {
     if (args.isEmpty()) {
