@@ -64,13 +64,9 @@ if [ ! -f "$SRC_FILE" ]; then
 package com.harmim.aoc$YEAR
 
 class $DAY_CLASS(input: String) : BaseDay(input) {
-    override fun part1(): Any {
-        return 0
-    }
+    override fun part1() = 0
 
-    override fun part2(): Any {
-        return 0
-    }
+    override fun part2() = 0
 }
 EOF
 else

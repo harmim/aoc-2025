@@ -1,12 +1,12 @@
 package com.harmim.aoc2025
 
 class Day02(input: String) : BaseDay(input) {
-    private val ranges: List<LongRange> = raw().split(',').map {
+    private val ranges = raw().split(',').map {
         val parts = it.split('-')
         parts[0].toLong()..parts[1].toLong()
     }
 
-    override fun part1(): Any = ranges.sumOf { range ->
+    override fun part1() = ranges.sumOf { range ->
         range.filter {
             val idStr = it.toString()
             val idLen = idStr.length
@@ -15,7 +15,7 @@ class Day02(input: String) : BaseDay(input) {
         }.sum()
     }
 
-    override fun part2(): Any = ranges.sumOf { range ->
+    override fun part2() = ranges.sumOf { range ->
         range.filter { id ->
             val idStr = id.toString()
             val idLen = idStr.length
