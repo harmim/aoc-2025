@@ -13,9 +13,9 @@ fun main(args: Array<String>) {
         exitProcess(1)
     }
 
-    val day = args[0].toIntOrNull()
+    val day = args.first().toIntOrNull()
     if (day == null) {
-        System.err.println("Invalid day: '${args[0]}'.")
+        System.err.println("Invalid day: '${args.first()}'.")
         exitProcess(1)
     }
     val test = args.getOrNull(1) == "test"

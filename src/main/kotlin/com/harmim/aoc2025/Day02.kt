@@ -2,8 +2,8 @@ package com.harmim.aoc2025
 
 class Day02(input: String) : BaseDay(input) {
     private val ranges = raw().split(',').map {
-        val parts = it.split('-')
-        parts[0].toLong()..parts[1].toLong()
+        val (start, end) = it.split('-')
+        start.toLong()..end.toLong()
     }
 
     override fun part1() = ranges.sumOf { range ->
